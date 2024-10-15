@@ -1,9 +1,14 @@
 dato = False
 contador = 0
 
+# ingreso de texto por parte del usuario
+
 usuario = input('ingresar usuario: ')
 
 base_usuarios = ["pepe", "juan", "texto"]
+
+# si el valor ingresado se encuentra en la lista definida anteriormente
+# continua con la ejecucion del programa
 
 while usuario in base_usuarios:
 
@@ -15,6 +20,7 @@ while usuario in base_usuarios:
         break
 
 
+# ingreso de valores necesarios para calcular factor de cobertura en Jersey
 
 if dato:
 
@@ -29,6 +35,7 @@ if dato:
 else:
     print('usuario incorrecto')
 
+#funcion que convierte el valor titulo ingresado por el usuario a tex
 
 def conversion(titulo):
 
@@ -42,7 +49,11 @@ def conversion(titulo):
 
 print('___________________________________________________')
 
+#llamada a la funcion conversion y realizacion del calculo
+#con los datos ingresados por el usuario
+
 factor = conversion(titulo) / longitud_malla
 
+#resultado
 
 print(f'Factor de cobertura: {factor}')
